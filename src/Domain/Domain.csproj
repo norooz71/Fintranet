@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+
+    <PropertyGroup>
+        <TargetFramework>net7.0</TargetFramework>
+        <RootNamespace>EShop.Domain</RootNamespace>
+        <AssemblyName>EShop.Domain</AssemblyName>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+
+    <ItemGroup>
+      <Compile Remove="Entities\OrderBase.cs" />
+      <Compile Remove="Entities\OrderItemBase.cs" />
+      <Compile Remove="Entities\TodoItem.cs" />
+      <Compile Remove="Entities\TodoList.cs" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="MediatR" Version="12.0.0" />
+      <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.3" />
+    </ItemGroup>
+
+</Project>
